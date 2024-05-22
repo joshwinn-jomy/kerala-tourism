@@ -10,7 +10,7 @@
 
             padding: 50px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
             background-color: transparent;
             row-gap: 1px;
             column-gap: 1px;
@@ -23,18 +23,19 @@
 
         .destination-place a {
             text-decoration: none;
-            color: white;
+            color: rgb(255, 255, 255);
         }
 
         .destination-place-text {
             position: absolute;
-            top: 0px;
+            bottom: 0px;
             color: white;
             margin: 0;
             right: 0px;
             left: 0px;
-            text-align: left;
-            padding: 50px;
+            text-align: center;
+            padding: 20px;
+            background-color: #00000090;
         }
 
         .destination-place-image {
@@ -42,51 +43,7 @@
             height: 100%;
         }
 
-        .tile:before {
-            opacity: 0;
-            -webkit-transition: all .3s ease-out;
-            -moz-transition: all .3s ease-out;
-            -ms-transition: all .3s ease-out;
-            -o-transition: all .3s ease-out;
-            pointer-events: none
-        }
-
-        .tile {
-            position: relative;
-            display: block;
-            width: 100%;
-        }
-
-        .tile:before {
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 30%;
-            position: absolute;
-            content: '';
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .tile:hover:before {
-            top: 0;
-            bottom: 0;
-            opacity: 1
-        }
-
-        .tile .cost {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            padding: 5px 8px;
-            background-color: #900;
-            color: #fff;
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-            font-size: 12px;
-            font-weight: 300;
-        }
-
-        .kt-btn {
+        .find-more .kt-btn {
             min-width: 180px;
             padding: 10px 20px;
             background-color: #036;
@@ -95,106 +52,182 @@
             display: inline-block;
         }
 
-        .fa {
-            display: inline-block;
-            font: normal normal normal 14px/1 FontAwesome;
-            font-size: inherit;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+        .section-head h2 {
+            margin: 0;
+            padding: 0;
+            letter-spacing: -1px;
         }
 
-        .fa-chevron-right:before {
-            content: "\f054";
+        .section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            text-align: center;
+            color: #036;
+            margin: 30px 0;
+            letter-spacing: -0.08px;
         }
 
-        a {
+        h2 {
+            font-size: 22px;
             text-decoration: none;
+            line-height: 2em;
+        }
+
+        .section-head .sub-head {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            display: block;
+            margin: 5px auto;
+            width: 100%;
+            max-width: 1024px;
+            color: #444;
+            font-weight: 300;
+            letter-spacing: -0.05px;
+        }
+
+        .sub-head {
+            font-family: 'Open-Sans', sans-serif;
+            font-size: 18px;
         }
     </style>
 
 <body>
-    <center>
-        <h2>Tour Packages</h2>
-        <br>
-        <h4>STOP. Breathe. Slow down. Embrace life. It’s time for Kerala! <br>Plan your trip with amazing offers
-            and packages. </h4>
-    </center>
+    <div class="section-head">
+        <center>
+            <h2>Explore Photo Gallery</h2>
+        </center>
+        <span class="sub-head"></span>
+    </div>
     <div class="destinations">
         <div class="destination-place tile">
             <p class="destination-place-text">
-                <a href="https://www.keralatourism.org/service-providers-packages">
-                    Entire Kerala <br><small>A journey through God's Own Country</small></a>
+                <a href="https://www.keralatourism.org/photo-gallery/beaches">
+                    Beaches </a>
 
             </p>
-            <a href="https://www.keralatourism.org/service-providers-packages">
-                <img src="https://www.keralatourism.org/images/homecontentimage/entire-kerala.jpg"
+            <a href="https://www.keralatourism.org/photo-gallery/beaches">
+                <img src="https://www.keralatourism.org/images/homecontentimage/desktop/img-13.jpg"
                     class="destination-place-image">
-                <span class="cost">INR 2,000 to 118,000</span>
             </a>
         </div>
         <div class="destination-place tile">
             <p class="destination-place-text">
-                <a href="https://www.keralatourism.org/service-providers-packages">
-                    Central Kerala <br><small>Trip to the soul of Kerala</small></a>
+                <a href="https://www.keralatourism.org/photo-gallery/kerala-panorama">
+                    Kerala Panorama </a>
             </p>
-            <a href="https://www.keralatourism.org/service-providers-packages">
-                <img src="https://www.keralatourism.org/images/homecontentimage/central-kerala.jpg"
+            <a href="https://www.keralatourism.org/photo-gallery/kerala-panorama">
+                <img src="https://www.keralatourism.org/images/homecontentimage/desktop/panorama.jpg"
                     class="destination-place-image">
-                <span class="cost">INR 1,000 to 116,000</span>
             </a>
         </div>
         <div class="destination-place tile">
             <p class="destination-place-text">
-                <a href="https://www.keralatourism.org/service-providers-packages">
-                    Backwater <br><small>Through the stretches of emerald</small></a>
+                <a href="https://www.keralatourism.org/photo-gallery/pilgrim-centres">
+                    Pilgrim Centres </a>
             </p>
-            <a href="https://www.keralatourism.org/service-providers-packages">
-                <img src="https://www.keralatourism.org/images/homecontentimage/backwater.jpg"
+            <a href="https://www.keralatourism.org/photo-gallery/pilgrim-centres">
+                <img src="https://www.keralatourism.org/images/homecontentimage/desktop/img-3.jpg"
                     class="destination-place-image">
-                <span class="cost">INR 1,000 to 60,000</span>
             </a>
         </div>
         <div class="destination-place tile">
             <p class="destination-place-text">
-                <a href="https://www.keralatourism.org/service-providers-packages">
-                    South Kerala <br><small>A journey to remember</small></a>
+                <a href="https://www.keralatourism.org/photo-gallery/performing-arts">
+                    Artforms </a>
             </p>
-            <a href="https://www.keralatourism.org/service-providers-packages">
-                <img src="https://www.keralatourism.org/images/homecontentimage/south-kerala.jpg"
+            <a href="https://www.keralatourism.org/photo-gallery/performing-arts">
+                <img src="https://www.keralatourism.org/images/homecontentimage/desktop/img-4.jpg"
                     class="destination-place-image">
-                <span class="cost">INR 1,000 to 175,000</span>
             </a>
         </div>
         <div class="destination-place tile">
             <p class="destination-place-text">
-                <a href="https://www.keralatourism.org/service-providers-packages">
-                    Hill Station <br><small>Explore the lush mist-clad hill stations</small></a>
+                <a href="https://www.keralatourism.org/photo-gallery/festivals">
+                    Festivals </a>
             </p>
-            <a href="https://www.keralatourism.org/service-providers-packages">
-                <img src="https://www.keralatourism.org/images/homecontentimage/hill-station.jpg"
+            <a href="https://www.keralatourism.org/photo-gallery/festivals">
+                <img src="https://www.keralatourism.org/images/homecontentimage/desktop/festivals.jpg"
                     class="destination-place-image">
-                <span class="cost">INR 2,000 to 50,000</span>
-            </a>
-        </div>
-        <div class="destination-place tile">
-            <p class="destination-place-text">
-                <a href="https://www.keralatourism.org/service-providers-packages">
-                    Honeymoon <br><small>Celebrate your romance</small></a>
-            </p>
-            <a href="https://www.keralatourism.org/service-providers-packages">
-                <img src="https://www.keralatourism.org/images/homecontentimage/honeymoon.jpg"
-                    class="destination-place-image">
-                <span class="cost">INR 2,000 to 150,000</span>
-            </a>
-        </div>
 
+            </a>
+        </div>
+        <div class="destination-place tile">
+            <p class="destination-place-text">
+                <a href="https://www.keralatourism.org/photo-gallery/places-of-interest">
+                    Places of Interest </a>
+            </p>
+            <a href="https://www.keralatourism.org/photo-gallery/places-of-interest">
+                <img src="https://www.keralatourism.org/images/homecontentimage/desktop/places-of-interest1.jpg"
+                    class="destination-place-image">
+            </a>
+        </div>
+        <div class="destination-place tile">
+            <p class="destination-place-text">
+                <a href="https://www.keralatourism.org/photo-gallery/waterfalls">
+                    Waterfalls </a>
+            </p>
+            <a href="https://www.keralatourism.org/photo-gallery/waterfalls">
+                <img src="https://www.keralatourism.org/images/homecontentimage/desktop/img-7.jpg"
+                    class="destination-place-image">
+            </a>
+        </div>
+        <div class="destination-place tile">
+            <p class="destination-place-text">
+                <a href="https://www.keralatourism.org/photo-gallery/monuments">
+                    Monuments </a>
+            </p>
+            <a href="https://www.keralatourism.org/photo-gallery/monuments">
+                <img src="https://www.keralatourism.org/images/homecontentimage/desktop/places-of-interest.jpg"
+                    class="destination-place-image">
+            </a>
+        </div>
+        <div class="destination-place tile">
+            <p class="destination-place-text">
+                <a href="https://www.keralatourism.org/photo-gallery/wildlife">
+                    Wildlife</a>
+            </p>
+            <a href="https://www.keralatourism.org/photo-gallery/wildlife">
+                <img src="https://www.keralatourism.org/images/homecontentimage/desktop/wild-life-2.jpg"
+                    class="destination-place-image">
+            </a>
+        </div>
+        <div class="destination-place tile">
+            <p class="destination-place-text">
+                <a href="https://www.keralatourism.org/photo-gallery/hills">
+                    Hills</a>
+            </p>
+            <a href="https://www.keralatourism.org/photo-gallery/hills">
+                <img src="https://www.keralatourism.org/images/homecontentimage/desktop/img-10.jpg"
+                    class="destination-place-image">
+            </a>
+        </div>
+        <div class="destination-place tile">
+            <p class="destination-place-text">
+                <a href="https://www.keralatourism.org/highresolutionimages/ayurveda/">
+                    Ayurveda </a>
+            </p>
+            <a href="https://www.keralatourism.org/highresolutionimages/ayurveda/">
+                <img src="https://www.keralatourism.org/images/homecontentimage/desktop/img-11.jpg"
+                    class="destination-place-image">
+            </a>
+        </div>
+        <div class="destination-place tile">
+            <p class="destination-place-text">
+                <a href="https://www.keralatourism.org/photo-gallery/backwater">
+                    Backwaters </a>
+            </p>
+            <a href="https://www.keralatourism.org/photo-gallery/backwater">
+                <img src="https://www.keralatourism.org/images/homecontentimage/desktop/img-12.jpg"
+                    class="destination-place-image">
+            </a>
+        </div>
     </div>
     <div>
-        <center><a href="https://www.keralatourism.org/service-providers-packages" class="kt-btn"
-                title="FIND MORE PACKAGES">FIND MORE PACKAGES &nbsp;<i class="fa fa-chevron-right"
-                    aria-hidden="true"></i></a></center>
-    </div>
+        <center><a href="https://www.keralatourism.org/photo-gallery/" class="kt-btn" title="FIND MORE PACKAGES">BROWSE
+                OUR GALLERY &nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></a></center>
+
 </body>
 
 </head>
